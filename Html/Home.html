@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Creative Innovation Company</title>
+    <link rel="stylesheet" href="../Css//footer.css">
+    <link rel="stylesheet" href="../Css//header.css">
+    <link rel="stylesheet" href="../Css//homepage.css">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            color: #000;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            font-size: 1rem;
+        }
+
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+            background-color: #fff;
+        }
+
+        .featured-work {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .featured-work h2 {
+            font-size: 2rem;
+            margin-bottom: 20px;
+        }
+
+        .featured-grid {
+            display: flex;
+            justify-content: center;
+            /* gap: 20px; */
+        }
+
+        .featured-item {
+            flex: 1;
+        }
+
+        .featured-item video {
+            width: 100%;
+            height: auto;
+            pointer-events: none; /* Prevent click interactions */
+        }
+        .section {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .section-1 {
+            background-color: black;
+            color: white;
+        }
+        .section-1 a {
+            color: white;
+            text-decoration: none;
+        }
+        .section-1 a:hover {
+            text-decoration: underline;
+        }
+        .section-2 {
+            display: flex;
+            align-items: center;
+            padding: 40px;
+        }
+        .section-2 img {
+            max-width: 200px;
+            margin-right: 20px;
+            border-radius: 8px;
+        }
+        .section-3 {
+            background-color: white;
+            color: black;
+            padding: 20px;
+        }
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+        }
+        .services-list li {
+            margin: 10px 0;
+        }
+    </style> -->
+    <!-- <style>
+        /* Global styles */
+        body {
+            margin: 0;
+            font-family: 'Roboto', Arial, sans-serif;
+            color: #333;
+            background-color: #f9f9f9;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: #007bff;
+        }
+
+        a:hover {
+            color: #0056b3;
+        }
+
+        /* Header styles */
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 40px;
+            background-color: #fff;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .logo span {
+            color: red;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 20px;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            font-size: 1rem;
+            cursor: pointer;
+        }
+
+        nav ul li:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section styles */
+        .hero {
+            text-align: center;
+            padding: 100px 20px;
+            background-color: #f4f4f4;
+        }
+
+        .hero h1 {
+            font-size: 3rem;
+            font-weight: bold;
+            margin-bottom: 20px;
+            color: #222;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            color: #555;
+        }
+
+        /* Video section styles */
+        .video-section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+            background-color: #fff;
+        }
+
+        .video-section video {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        /* Featured work section */
+        .featured-work {
+            padding: 50px 20px;
+            background-color: #f9f9f9;
+            text-align: center;
+        }
+
+        .featured-work h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #333;
+        }
+
+        .featured-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .featured-item {
+            flex: 1 1 calc(50% - 20px);
+            max-width: calc(50% - 20px);
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .featured-item video {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .featured-item video:hover {
+            transform: scale(1.05);
+        }
+
+        .featured-item h1 {
+            font-size: 1.2rem;
+            margin: 10px 0;
+            color: #333;
+        }
+
+        .featured-item p {
+            color: #666;
+        }
+
+        /* Section styles */
+        .section {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            align-items: center;
+            padding: 40px 20px;
+        }
+
+        .section img {
+            max-width: 100%;
+            border-radius: 8px;
+        }
+
+        .section-1 {
+            background-color: black;
+            color: white;
+            padding: 20px;
+        }
+
+        .section-1 a {
+            color: white;
+            text-decoration: underline;
+        }
+
+        .section-2 {
+            padding: 40px 20px;
+            background-color: #fff;
+        }
+
+        .section-2 img {
+            max-width: 300px;
+        }
+
+        .section-3 {
+            padding: 40px 20px;
+            background-color: #fff;
+            text-align: center;
+        }
+
+        .services-list {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .services-list li {
+            margin: 10px 0;
+            font-size: 1rem;
+        }
+
+        .services-list li a {
+            color: #007bff;
+        }
+
+        .services-list li a:hover {
+            color: #0056b3;
+        }
+
+        /* Footer-like layout */
+        .section-1 {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .section-1 div {
+            flex: 1;
+            margin: 10px;
+        }
+
+        .section-1 p {
+            margin: 5px 0;
+        }
+
+        /* Responsive design */
+        @media (max-width: 768px) {
+            .featured-item {
+                flex: 1 1 100%;
+            }
+
+            .section {
+                flex-direction: column;
+            }
+
+            .section-1 div {
+                flex: 1 1 100%;
+            }
+        }
+        .services {
+      padding: 50px;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .services h2 {
+      font-size: 24px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+
+    .services p {
+      font-size: 16px;
+      margin-bottom: 30px;
+      line-height: 1.6;
+    }
+
+    .services ul {
+      list-style-type: none;
+      padding: 0;
+    }
+
+    .services li {
+      font-size: 16px;
+      margin: 10px 0;
+      padding: 10px;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .services li a {
+      text-decoration: none;
+      color: #000;
+      font-weight: bold;
+    }
+
+    .services li a:hover {
+      color: #f00;
+    }
+
+    .services li:last-child {
+      border-bottom: none;
+    }
+    </style> -->
+</head>
+<body>
+    <header>
+        <div class="logo"><span>R/</span>GA</div>
+        <nav>
+            <ul >
+                <li  ><a style="text-decoration-line: none;color: black;" href="./work.html">Work</a></li>
+                <li ><a style="text-decoration-line: none;color: black;" href="./servies.html">Services</a></li>
+                <li ><a style="text-decoration-line: none;color: black;" href="./Aboutus.html">About Us</a></li>
+                <li><a style="text-decoration-line: none;color: black;" href="./careers.html">Careers</a></li>
+                <li><a style="text-decoration-line: none;color: black;" href="./news.html">News</a></li>
+                <li ><a style="text-decoration-line: none;color: black;" href="./content.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section class="hero"> 
+               <p class="text-start" style="font-size: 2.3rem;">A GLOBAL CREATIVE INNOVATION COMPANY</p>
+
+        <h1 style="font-size: 8.2rem;" class="text-start">WE CREATE MORE<br>VALUABLE EXPERIENCES<br>FOR PEOPLE AND BRANDS</h1>
+    </section>
+    <section class="video-section">
+        <video width="100%" muted>
+            <source 
+            src="https://videos.ctfassets.net/p75iruyjd2t1/6KqMy0l7cyKeCKyWS6GgM6/21322f5d0563e54990609e42c5411d60/RGA_Homepage_Reel_V60_final.mp4" 
+            type="video/mp4">
+        </video>
+    </section>
+    
+    <section class="featured-work">
+        <h2 class="text-start text-bold " style="font-size: 3.3rem;">FEATURED WORK</h2>
+        <div class="featured-grid">
+            <div class="featured-item p-4">
+                <video  id="vid1"  muted>
+                    <source
+                     src="https://videos.ctfassets.net/p75iruyjd2t1/7yw740NpNEvAdzJXmr1fX3/5761ee04d8381f2c49a2fade31d9b4be/android-hover.mp4" 
+                     
+                     type="video/mp4">
+                </video>
+                <h1 class="text-start">WE CREATE MORE VALUABLE EXPERIENCES<br>FOR PEOPLE AND BRANDS</h1>
+                <p class="text-start"> A GLOBAL CREATIVE INNOVATION COMPANY</p>
+            </div>
+            <!-- https://videos.ctfassets.net/p75iruyjd2t1/1XxpIM06YQzVEoAkxqcy1F/d329e98ce3fbb4da58e9cc602c3216d5/PAM_Thumb_Hover_01.mp4 -->
+            <div class="featured-item p-4">
+                <video  id="vid2" muted >
+                    <source 
+                    src="https://videos.ctfassets.net/p75iruyjd2t1/47ieiQr7lRCLMEdCauCuOS/d4adc4531440d3438af67ccb7c032523/UCB_CaseStudy_Ecommerce.mp4" 
+                    type="video/mp4">
+                </video>
+                <h1 class="text-start">WE CREATE MORE<br>VALUABLE EXPERIENCES<br>FOR PEOPLE AND BRANDS</h1>
+                <p class="text-start">A GLOBAL CREATIVE INNOVATION COMPANY</p>
+            </div>
+        </div>
+        <div class="featured-grid">
+            <div class="featured-item p-4">
+                <video id="vid3"  muted >
+                    <source
+                     src="https://videos.ctfassets.net/p75iruyjd2t1/7az3wRLzEAdE91Ipo1e1NI/7b0531dc4c50ed0b2db61bb6220d12dd/00-CarbonCakes-Thumbnail-Hover.mp4" 
+                     type="video/mp4">
+                </video>
+                <h1 class="text-start">WE CREATE MORE<br>VALUABLE EXPERIENCES<br>FOR PEOPLE AND BRANDS</h1>
+                <p class="text-start"> A GLOBAL CREATIVE INNOVATION COMPANY</p>
+            </div>
+            <div class="featured-item">
+                <video  id="vid4" muted>
+                    <source
+                    src="https://videos.ctfassets.net/p75iruyjd2t1/1XxpIM06YQzVEoAkxqcy1F/d329e98ce3fbb4da58e9cc602c3216d5/PAM_Thumb_Hover_01.mp4" 
+                    type="video/mp4">
+                </video>
+                <h1>WE CREATE MORE<br>VALUABLE EXPERIENCES<br>FOR PEOPLE AND BRANDS</h1>
+                <p>A GLOBAL CREATIVE INNOVATION COMPANY</p>
+            </div>
+        </div>
+    </section>
+  
+
+<hr>
+<section class="container-fluid services p-4 ">
+    <div class="row">
+        <div class="col-lg-4" >
+            <h2 style="font-size: 3.3rem;">Services</h2>
+            <p style="font-size: 1.2rem;">We bring together the right expertise with 
+                the best use of technology to design experiences that shape people's 
+                relationships with brands across their entire ecosystem.
+            <br>
+            See how we can help.</p>
+            <!-- <p style="font-size: 1.2rem;">See how we can help.</p> -->
+        </div>
+        <div class="col-lg-8" >
+            <ul >
+                <li><a href="#brand-design">Brand Design</a> <span style="float: right;padding-right: 30px;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></span></li>
+                <li><a href="#product-experience-design">Product & Experience Design</a><span style="float: right;padding-right: 30px;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></span></li>
+                <li><a href="#campaign-content-design">Campaign & Content Design</a><span style="float: right;padding-right: 30px;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></span></li>
+                <li><a href="#crm-relationship-design">CRM & Relationship Design</a><span style="float: right;padding-right: 30px;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></span></li>
+                <li><a href="#rga-ventures">R/GA Ventures</a><span style="float: right;padding-right: 30px;" ><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-right" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8"/>
+                  </svg></span></li><hr>
+              </ul>
+        </div>
+    </div>
+    <!-- <h2>Services</h2>
+    <p>We bring together the right expertise with the best use of technology to design experiences that shape people's relationships with brands across their entire ecosystem.</p>
+    <p>See how we can help.</p>
+    <ul>
+      <li><a href="#brand-design">Brand Design</a></li>
+      <li><a href="#product-experience-design">Product & Experience Design</a></li>
+      <li><a href="#campaign-content-design">Campaign & Content Design</a></li>
+      <li><a href="#crm-relationship-design">CRM & Relationship Design</a></li>
+      <li><a href="#rga-ventures">R/GA Ventures</a></li>
+    </ul> -->
+  </section>
+
+    <!-- Section 2: Culture -->
+     <section>
+           <div class="section section-2">
+        <img src="https://res.cloudinary.com/rga/image/upload/f_auto/q_auto/v1717520283/homepage-bayyina_1_ybwoye.png" alt="People collaborating">
+        <div style="width: 40%; padding: 50px;" class="text-start">
+            <h2 style="font-size: 4.3rem; margin-bottom: 100px;">Culture</h2>
+            <p style="font-size: 2.3rem;">Our culture is rooted in a shared respect for the skills and perspectives each of us brings, whether you’re an intern or an executive.</p>
+            <p style="font-size: 2.3rem;">It’s a culture that allows us to leverage our unique backgrounds and experiences to challenge one another, to lean into being uncomfortable, and to unlearn and relearn as we continually evolve.</p>
+        </div>
+    </div>
+     </section>
+ <section>
+    <hr>
+    <div> 
+          <span style="float:right; font-size: 3.3rem; margin-bottom: 100px;padding: 60px;">
+            10 open Role <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" fill="currentColor" class="bi bi-arrow-up-left-square" viewBox="0 0 16 16">
+                <path fill-rule="evenodd" d="M15 2a1 1 0 0 0-1-1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1zM0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v12a2 2 0 0 1-2 2H2a2 2 0 0 1-2-2zm10.096 8.803a.5.5 0 1 0 .707-.707L6.707 6h2.768a.5.5 0 1 0 0-1H5.5a.5.5 0 0 0-.5.5v3.975a.5.5 0 0 0 1 0V6.707z"/>
+              </svg>
+        </span>
+        <p style="font-size: 3.3rem;padding: 60px;">JOIN R/GA </p>
+     
+    </div>
+ </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-locations" style="width: auto;">
+                <ul class="locations-list">
+                    <li>AR</li>
+                    <li>AU</li>
+                    <li>BR</li>
+                    <li>CN</li>
+                    <li>DE</li>
+                    <li>ID</li>
+                    <li>JP</li>
+                    <li>SG</li>
+                    <li>UK</li>
+                    <li>US</li>
+                </ul>
+            </div>
+            <div class="footer-info">
+                <p>
+                    If you have ideas for your brand, your business, or the world at large,<br>
+                    we’re here to listen and collaborate.<br>
+                    We can design a more human future together.
+                </p>
+                <ul class="social-links">
+                    <li><a href="#">X ↗</a></li>
+                    <li><a href="#">Instagram ↗</a></li>
+                    <li><a href="#">LinkedIn ↗</a></li>
+                </ul>
+            </div>
+            <div class="footer-legal">
+                <ul class="legal-list">
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Cookies</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                    <li><a href="#">Scam Alert</a></li>
+                    <li><a href="#">Modern Slavery Policy</a></li>
+                    <li><a href="#">CCPA Privacy Notice</a></li>
+                    <li><a href="#">Press & Media</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-brand">
+            <p>© R/GA 1977–TMRW</p>
+            <p>WE DESIGN BUSINESSES AND BRANDS FOR A MORE HUMAN FUTURE</p>
+            <div class="red-square"></div>
+        </div>
+    </footer>
+    
+    
+     <script>
+ document.getElementById('vid1').addEventListener("mouseenter", (event) => {
+    event.target.play(); // Play the specific video being hovered
+});
+        document.querySelectorAll("video").forEach(video => {
+            video.addEventListener("mouseenter", () => {
+                video.play();
+            });
+            video.addEventListener("mouseleave", () => {
+                video.pause();
+                video.currentTime = 0; // Reset video to start
+            });
+        });
+
+
+
+
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
+ <!-- Section 3: Services -->
+ <!-- <div class="section section-3">
+    <h2>Services</h2>
+    <p>We bring together the right expertise with the best use of technology to design experiences that shape people's relationships with brands across their entire ecosystem.</p>
+    <p>See how we can help.</p>
+    <ul class="services-list">
+        <li><a href="#">Brand Design</a></li> <hr>
+        <li><a href="#">Product & Experience Design</a></li> <hr>
+        <li><a href="#">Campaign & Content Design</a></li><hr>
+        <li><a href="#">CRM & Relationship Design</a></li><hr>
+        <li><a href="#">R/GA Ventures</a></li>
+    </ul>
+</div> -->     <!-- Section 1: Footer-like layout -->
+     <!-- <div class="section section-1">
+        <div>
+            <p>Join R/GA</p>
+            <p>AR AU BR CN DE ID JP SG UK US</p>
+        </div>
+        <div>
+            <p>If you have ideas for your brand, your business, or the world at large, we’re here to listen and collaborate.</p>
+            <p>We can design a more human future together.</p>
+            <p><a href="#">X</a> | <a href="#">Instagram</a> | <a href="#">LinkedIn</a></p>
+        </div>
+    </div>  -->
