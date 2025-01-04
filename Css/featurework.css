@@ -1,0 +1,45 @@
+.featured-work {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+.featured-work h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.featured-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.featured-item {
+    flex: 1 1 calc(50% - 20px);
+    max-width: calc(50% - 20px);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.featured-item video {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.featured-item video:hover {
+    transform: scale(1.05);
+}
+
+.featured-item h1 {
+    font-size: 1.2rem;
+    margin: 10px 0;
+    color: #333;
+}
+
+.featured-item p {
+    color: #666;
+}

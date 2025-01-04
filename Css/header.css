@@ -1,0 +1,52 @@
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    color: #333;
+    background-color: #f9f9f9;
+    line-height: 1.6;
+}
+
+a {
+    text-decoration: none;
+    /* color: #007bff; */
+}
+
+/* a:hover {
+    color: #0056b3;
+} */
+
+/* Header styles */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #fff;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.logo span {
+    color: red;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    text-decoration: underline;
+}
